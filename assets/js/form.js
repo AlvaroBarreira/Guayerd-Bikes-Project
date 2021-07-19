@@ -1,0 +1,80 @@
+(function($) {
+
+    var	$window = $(window),
+		$body = $('body');
+
+	// Breakpoints.
+		breakpoints({
+			xlarge:  [ '1281px',  '1680px' ],
+			large:   [ '981px',   '1280px' ],
+			medium:  [ '737px',   '980px'  ],
+			small:   [ null,      '736px'  ]
+		});
+
+	// Play initial animations on page load.
+		$window.on('load', function() {
+			window.setTimeout(function() {
+				$body.removeClass('is-preload');
+			}, 100);
+		});
+
+	// Dropdowns.
+		$('#nav > ul').dropotron({
+			mode: 'fade',
+			noOpenerFade: true,
+			speed: 300
+		});
+
+	// Nav.
+
+		// Toggle.
+			$(
+				'<div id="navToggle">' +
+					'<a href="#navPanel" class="toggle"></a>' +
+				'</div>'
+			)
+				.appendTo($body);
+
+		// Panel.
+			$(
+				'<div id="navPanel">' +
+					'<nav>' +
+						$('#nav').navList() +
+					'</nav>' +
+				'</div>'
+			)
+				.appendTo($body)
+				.panel({
+					delay: 500,
+					hideOnClick: true,
+					hideOnSwipe: true,
+					resetScroll: true,
+					resetForms: true,
+					side: 'left',
+					target: $body,
+					visibleClass: 'navPanel-visible'
+				});
+
+				
+
+				var nav = $("#navToggle");
+
+				nav.on('click', function () {
+					
+					$("body").toggleClass("fade");
+					nav.toggleClass("sup");
+					$("#container-name").toggleClass("index");
+					$("#name").toggleClass("index");
+					$("#form").toggleClass("index");
+					$("#map-container").toggleClass("index");
+					$("#name").toggleClass("index");
+					$("#text-container").toggleClass("index");
+					$("#text").toggleClass("index");
+					$("#map").toggleClass("index");
+					$("#iframe").toggleClass("index");
+				});
+
+  
+
+
+})(jQuery);    

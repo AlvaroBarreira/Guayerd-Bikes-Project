@@ -1,0 +1,306 @@
+/* /Modificaciones por encima de los estilos predeterminados/ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background:#212C65;
+    
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+#header-wrapper {
+    width: 100%;
+    padding: 10px; 
+    background:rgba(0, 0, 0, 0.4);
+    height: 70px; 
+                
+}
+
+
+#logo h1 {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+#nav ul li a {
+    background: #01A1DD;
+    color: #000000;
+    border-radius: 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+
+
+#nav ul li a:hover {
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+
+
+#main-wrapper {
+    padding: 20px 20px;
+    background: rgb(237, 237, 237);
+    height: 500px;
+    margin-top: 60px;
+    border: 4px double black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    height: auto;
+    
+}
+
+p, h1, h2, table {
+    color: #000000;
+    
+}
+
+#main-wrapper p {
+    padding: 0px 90px;
+    font-family: 'Mallanna', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background:rgba(1, 161, 221, 0.4);
+    border-radius: 5px 5px;
+    
+}
+
+#main-wrapper h2 {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 6px;
+    border-bottom: 2px solid black;
+}
+
+.inov {
+
+    width: 500px;
+    height: 300px;
+}
+
+#inovacion {
+    padding: 20px 20px;
+    background: rgb(237, 237, 237);
+    height: auto;
+    margin-top: 60px;
+    border: 4px double black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#inovacion h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 6px;
+    border-bottom: 2px solid black;
+}
+
+#inovacion p {
+    padding: 0px 90px;
+    font-family: 'Mallanna', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background:rgba(1, 161, 221, 0.4);
+    border-radius: 5px 5px;
+}
+
+#bicis {
+    padding: 20px 20px;
+    background: rgb(237, 237, 237);
+    height: auto;
+    margin-top: 60px;
+    border: 4px double black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#bicis h2 {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 6px;
+    border-bottom: 2px solid black;
+}
+
+#bicis p {
+    padding: 0px 90px;
+    font-family: 'Mallanna', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background:rgba(1, 161, 221, 0.4);
+    border-radius: 5px 5px;
+}
+
+#exitos {
+    padding: 20px 20px;
+    background: rgb(237, 237, 237);
+    height: auto;
+    margin-top: 60px;
+    border: 4px double black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#exitos h2 {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 6px;
+    border-bottom: 2px solid black;
+}
+
+#exitos p {
+    padding: 0px 90px;
+    font-family: 'Mallanna', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background:rgba(1, 161, 221, 0.4);
+    border-radius: 5px 5px;
+    
+}
+
+
+#premios {
+    padding: 20px 20px;
+    background: rgb(237, 237, 237);
+    height: auto;
+    margin-top: 60px;
+    border: 4px double black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-bottom: 20px;
+}
+
+table,tr,td {
+    border: 1px none black;
+    background:rgba(1, 161, 221, 0.2);
+}
+
+#premios h2 {
+    font-size: 50px;
+    border-bottom: 2px solid black;
+    text-align: left;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.active {
+    position: fixed;
+    z-index: 1;
+}
+
+.sup {
+    z-index:999999;
+}
+
+.inactive {
+    position: absolute;
+}	
+
+#banner-wrapper {
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+#banner-wrapper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 9999999;
+}
+
+.fade {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 9999999;
+    opacity: 0.9;
+    transition: all ease-in 0.4s;
+}
+
+.index{
+    
+    display: none;
+    transition: all ease-in-out 3s;
+}
+
+@media screen and (max-width: 737px) {
+    #main-wrapper {
+        height: auto;
+        word-wrap: break-word;
+    }
+
+    #main-wrapper h2 {
+        font-size: 35px;
+    }
+
+    #main-wrapper p {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    .inov {
+        height: 300px;
+        width: 450px;
+        float: none;
+
+        padding-right: 20px;
+    }
+
+    #inovacion {
+        height: 0px 20px;;
+        word-wrap: break-word;
+    }
+
+    #inovacion h2 {
+        font-size: 35px;
+    }
+
+    #inovacion p {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    #bicis {
+        height: 0px 20px;;
+        word-wrap: break-word;
+    }
+
+    #bicis h2 {
+        font-size: 35px;
+    }
+
+    #bicis p {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+
+    #exitos {
+        height: 0px 20px;;
+        word-wrap: break-word;
+    }
+
+    #exitos h2 {
+        font-size: 35px;
+    }
+
+    #exitos p {
+        font-size: 16px;
+        padding: 0px;
+    }
+}
