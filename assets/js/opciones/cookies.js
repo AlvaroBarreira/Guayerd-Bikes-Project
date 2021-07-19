@@ -96,7 +96,7 @@ function preguntarNombreEmail() {
     while (flag === true)  
 
 
-        if (confirm("Quiere ingresar su nombre y Email?")) {
+        if (confirm("Quiere ingresar su Nombre y Email?")) {
 
 
             nombre1 = nombre();
@@ -140,7 +140,7 @@ function validarDatos(dato, tipoDato) {
 
     if (dato === '') {
         while (dato === '') {
-            dato = prompt('Parece que la información que ingresaste en el ' + tipoDato + ' no es correcta.Asegúrate de usar un ' + tipoDato + ' válido');
+            dato = prompt('Parece que la información que ingresaste en el ' + tipoDato + ' no es correcta. Asegúrate de usar un ' + tipoDato + ' válido');
         }
         return dato;
     } else {
@@ -198,7 +198,7 @@ function notificaciones(){
     while (flag === true)
 
 
-        if (confirm("¿Quiere recibir notificaiones a su correo elétronico?")) {
+        if (confirm("¿Quiere recibir notificaciones a su correo electrónico?")) {
 
 
 
